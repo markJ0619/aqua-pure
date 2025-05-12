@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, #01c8ff90, #4a2424);
+    color: #f9fffd;
+    scroll-behavior: smooth;
+  }
+ 
+  nav {
+    background: #72cce752;
+    color: rgb(255, 252, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+ 
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+ 
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+ 
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+ 
+  .nav-links a:hover {
+    color: #064978;
+  }
+ 
+  header {
+    background: url(https://png.pngtree.com/background/20230412/original/pngtree-water-background-splash-blue-picture-image_2401536.jpg);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+ 
+  header h1 {
+    font-size: 3rem;
+  }
+ 
+  header p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+ 
+  button {
+    padding: 10px 25px;
+    background-color: #43d2c46c;
+    border: none;
+    color: rgb(255, 247, 247);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+ 
+  button:hover {
+    background-color: #900cee18;
+  }
+ 
+  section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+ 
+  .features {
+    background-color:rgba(16, 16, 92, 0.788);
+  }
+ 
+  .features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+ 
+  .gallery {
+    background-image: url(https://as2.ftcdn.net/v2/jpg/06/78/56/11/1000_F_678561176_9K7lpagHywN269YMWi4ZuJ7tykwkGnk1.jpg);
+  }
+ 
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+  }
+ 
+  .product-card {
+    background-color: rgba(133, 213, 227, 0.812);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+ 
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+ 
+  .product-card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+ 
+  .testimonials blockquote {
+    font-style: italic;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    font-size: 1.1rem;
+  }
+ 
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+ 
+  .contact input, .contact textarea {
+    margin: 0.5rem 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #006aff;
+    border-radius: 5px;
+  }
+ 
+  .hidden {
+    display: none;
+  }
+ 
+  #formMsg {
+    margin-top: 1rem;
+    color: rgba(112, 252, 198, 0.299);
+    font-weight: bold;
+  }
+ 
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1c3b36;
+    color: rgb(255, 255, 255);
+  }
+ 
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+ 
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+ 
+    header h1 {
+      font-size: 2rem;
+    }
+ 
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+ 
+    .product-card {
+      width: 90%;
+    }
+ 
+    .contact form {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
